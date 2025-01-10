@@ -22,6 +22,9 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("Hello from the API!");
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
