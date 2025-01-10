@@ -9,7 +9,6 @@ export const generateToken = (userId, res) => {
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 hari
     httpOnly: true,                 // Cegah akses JS
     secure: process.env.NODE_ENV === "production", // Hanya HTTPS di production
-    sameSite: "strict",             // Cegah CSRF
   });
   
 
