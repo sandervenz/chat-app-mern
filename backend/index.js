@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://yapper-ten.vercel.app",
+    origin: ["https://yapper-ten.vercel.app", "http://localhost:5173"],
     credentials: true,
   })
 );
